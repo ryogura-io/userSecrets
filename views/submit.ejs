@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<div class="submit-body vh-100 d-flex justify-content-center align-items-center">
+  <div class="card p-4 w-100" style="max-width: 600px;">
+    <h2 class="text-center mb-4">Submit a Secret</h2>
+
+    <form action="/submit" method="POST">
+      <div class="form-group">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?" autocomplete="off" required>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">Submit</button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
